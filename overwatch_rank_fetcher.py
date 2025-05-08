@@ -10,8 +10,7 @@ battletag = "username-12345"  # Replace with your battletag
 display_name = battletag.split("-")[0]  
 
 # 🌍 API endpoint from https://github.com/timomak/Overwatch-API
-encoded_battletag = battletag.replace("#", "-")
-url = f"https://ow-api.com/v1/stats/pc/us/{encoded_battletag}/profile"
+url = f"https://ow-api.com/v1/stats/pc/us/{battletag}/profile"
 
 # (´｡• ᵕ •｡`)♡ Cute kaomojis
 happy_kaomojis = [
