@@ -53,6 +53,10 @@ try:
     with open(os.path.join(os.path.dirname(__file__), "ow_rank_output.txt"), "w", encoding="utf-8") as f:
         f.write(output)
 
+    # Print to console 
+    print(output)
+
+
 except Exception as e:
     output = f"{random.choice(sad_kaomojis)} Failed to fetch Overwatch rank.\nError: {e}"
     with open(os.path.join(os.path.dirname(__file__), "ow_rank_output.txt"), "w", encoding="utf-8") as f:
